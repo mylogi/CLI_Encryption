@@ -1,0 +1,4 @@
+# Ignore files and directories matching these patterns
+
+# Ignore venv files
+.venv
