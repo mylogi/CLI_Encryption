@@ -8,7 +8,10 @@ class FileManager:
     Additional details about the class can be added here if needed.
     """
 
-    def __init__(self, nonce_path: str = "/your/nonce/path/nonce.bin"):
+    def __init__(
+            self,
+            nonce_path: str = "/your/path/to/binary_files/nonce.bin"
+    ):
         self.nonce_path = nonce_path
         self.file_path = f"./key{datetime.datetime.now()}.bin"
         self.utf_standard = 'utf-8'
