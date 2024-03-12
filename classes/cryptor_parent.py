@@ -4,6 +4,10 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 
 class CryptorParent:
+    """A CryptorParent class contains the shared logic for DataEncryptor and DataDecryptor.
+
+    Additional details about the class can be added here if needed.
+    """
 
     def __init__(
             self,
