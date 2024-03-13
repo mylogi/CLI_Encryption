@@ -41,7 +41,7 @@ class CryptorParent:
     def generate_key(self, bit_length=256) -> bytes:
         return self.cipher.generate_key(bit_length)
 
-    def add_key(self, key: bytes = None):
+    def add_key(self, key: bytes = None) -> bytes:
         if key == b"":
             return self.generate_key()
         else:

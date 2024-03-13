@@ -22,4 +22,6 @@ class DataEncryptor(CryptorParent):
             associated_data=self.associated_data
         )
 
+        print(f"{encryption_data=}")
+
         return encryption_data

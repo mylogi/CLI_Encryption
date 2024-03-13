@@ -16,7 +16,7 @@ class DataDecryptor(CryptorParent):
             associated_data=associated_data
         )
 
-    def decrypt_data(self, data: bytes):
+    def decrypt_data(self, data: bytes) -> bytes:
         encryption_data = self._return_aesgcm().decrypt(
             nonce=self.nonce,
             data=data,
